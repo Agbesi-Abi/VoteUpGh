@@ -1,0 +1,60 @@
+
+
+/* Bouncy and premium feel animations */
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-in {
+  animation: bounce-in 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes bounce-button {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-button:active {
+  animation: bounce-button 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #f8fafc 0%, #fff7e6 100%);
+}
+
+.premium-card {
+  box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.15), 0 1.5px 6px 0 rgba(0,0,0,0.04);
+  border: 2px solid #ffe066;
+  background: linear-gradient(135deg, #fffbe6 0%, #fff 100%);
+}
+
+.premium-popular {
+  border: 2.5px solid #ffd700;
+  box-shadow: 0 0 0 4px #fffbe6;
+}
